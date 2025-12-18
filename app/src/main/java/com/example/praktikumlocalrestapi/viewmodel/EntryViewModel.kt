@@ -10,8 +10,6 @@ import com.example.praktikumlocalrestapi.modeldata.toDataSiswa
 import com.example.praktikumlocalrestapi.repositori.RepositoryDataSiswa
 import okhttp3.Response
 
-private val Response.isSuccessful: Boolean
-
 class EntryViewModel(private val repositoryDataSiswa: RepositoryDataSiswa):
     ViewModel() {
     var uiStateSiswa by mutableStateOf(UIStateSiswa())
@@ -35,9 +33,9 @@ class EntryViewModel(private val repositoryDataSiswa: RepositoryDataSiswa):
             val sip:Response<Void> = repositoryDataSiswa
                 .postDataSiswa(uiStateSiswa.detailSiswa.toDataSiswa())
             if (sip.isSuccessful) {
-                printIn("Sukses Tambah Data : ${sip.message()}")
+                println("Sukses Tambah Data : ${sip.message()}")
             } else {
-                printIn("Gagal Tambah Data : ${sip.errorBody()}")
+                println("Gagal Tambah Data : ${sip.errorBody()}")
             }
         }
     }
