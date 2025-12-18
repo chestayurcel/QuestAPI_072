@@ -1,6 +1,7 @@
 package com.example.praktikumlocalrestapi.repositori
 
 import android.app.Application
+import com.example.praktikumlocalrestapi.apiservice.ServiceApiSiswa
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
