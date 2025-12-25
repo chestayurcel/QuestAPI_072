@@ -11,7 +11,7 @@ import com.example.praktikumlocalrestapi.modeldata.UIStateSiswa
 import com.example.praktikumlocalrestapi.modeldata.toDataSiswa
 import com.example.praktikumlocalrestapi.modeldata.toUiStateSiswa
 import com.example.praktikumlocalrestapi.repositori.RepositoryDataSiswa
-import com.example.praktikumlocalrestapi.uicontroller.route.DestinasiDetail
+import com.example.praktikumlocalrestapi.uicontroller.route.DestinasiEdit
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
@@ -20,7 +20,7 @@ RepositoryDataSiswa): ViewModel() {
     var uiStateSiswa by mutableStateOf(UIStateSiswa())
         private set
 
-    private val idSiswa: Int = checkNotNull(savedStateHandle[DestinasiDetail.itemIdArg])
+    private val idSiswa: Int = checkNotNull(savedStateHandle[DestinasiEdit.itemIdArg])
     init {
         viewModelScope.launch {
             uiStateSiswa = repositoryDataSiswa.getSatuSiswa(idSiswa)
