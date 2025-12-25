@@ -12,6 +12,7 @@ import com.example.praktikumlocalrestapi.uicontroller.route.DestinasiDetail
 import com.example.praktikumlocalrestapi.uicontroller.route.DestinasiEdit
 import com.example.praktikumlocalrestapi.uicontroller.route.DestinasiEntry
 import com.example.praktikumlocalrestapi.uicontroller.route.DestinasiHome
+import com.example.praktikumlocalrestapi.view.DetailSiswaScreen
 import com.example.praktikumlocalrestapi.view.EntrySiswaScreen
 import com.example.praktikumlocalrestapi.view.HomeScreen
 
