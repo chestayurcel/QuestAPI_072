@@ -6,3 +6,6 @@ Halaman Entry
 
 Halaman Home setelah input data (CREATE)
 <img width="1920" height="1080" alt="Screenshot (270)" src="https://github.com/user-attachments/assets/8d5e2205-5770-4012-9e29-cdf27fd06fdf" />
+
+Halaman Detail (READ)
+<img width="1920" height="1080" alt="Screenshot (272)" src="https://github.com/user-attachments/assets/a4ef403d-4129-406a-ace7-3445259e5259" />
